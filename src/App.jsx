@@ -1,10 +1,9 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 import BasicLayout from './layouts/BasicLayout'
 import Home from './pages/Home'
 import About from './pages/About'
+import Animals from './pages/Animals'
+import StarWars from './components/StarWars'
 import { Routes, Route } from 'react-router'
 
 function App() {
@@ -14,6 +13,8 @@ function App() {
         <Route element={<BasicLayout />}>
           <Route path='/' element={<Home />} />
           <Route path='/about' element={<About />} />
+          <Route path='/animals' element={<Animals />} />
+          <Route path='/star-wars' element={<StarWars />} />
         </Route>
       </Routes>
     </>
